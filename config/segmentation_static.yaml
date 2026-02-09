@@ -1,0 +1,10 @@
+nodes:
+  - id: "eco-core-1"
+    zone: EcoCore
+    device_class: ApprovedCpuOnly
+  - id: "grid-ot-1"
+    zone: GridOT
+    device_class: QuantumSafeGateway
+  - id: "datacenter-1"
+    zone: DataCenter
+    device_class: ApprovedCpuOnly
