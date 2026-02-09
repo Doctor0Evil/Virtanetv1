@@ -1,0 +1,4 @@
+max_shed_load_mw: 50.0
+max_step_change_mw: 100.0
+hitl_threshold_mw: 25.0
+protected_zones: []
