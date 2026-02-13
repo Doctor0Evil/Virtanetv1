@@ -1,0 +1,81 @@
+{
+  "nanopoly_id": "np-smartcity-sanctuary-001",
+  "zone_class": "SanctuaryCorridor",
+  "threat_class": "ot-actuation-misroute",
+  "impact_rating": 4,
+  "roh_ceiling": 0.30,
+  "hitl_required": true,
+  "appeal_path_id": "eco-infra-council-sanctuary-appeals-v1",
+
+  "geo": {
+    "location_band": "urban-core",
+    "hazard_level": "Moderate",
+    "resource_stress": 0.7,
+    "infrastructure_criticality": 8
+  },
+
+  "biospatial": {
+    "heat_stress": 0.35,
+    "pollution_exposure": 0.40,
+    "evacuation_density": 0.20
+  },
+
+  "learning": {
+    "gradient_weight": 0.90
+  },
+
+  "intelligence": {
+    "quantified_safety_index": -0.20
+  },
+
+  "governance": {
+    "airmf": {
+      "functions": ["MAP", "MEASURE", "MANAGE", "GOVERN"],
+      "hazard_class": "biofield-stress"
+    },
+    "sp80053_refs": [
+      { "family": "AC", "controls": ["AC-2", "AC-3"] },
+      { "family": "AU", "controls": ["AU-2", "AU-3", "AU-12"] },
+      { "family": "RA", "controls": ["RA-5"] }
+    ],
+    "sp80053_impact": {
+      "confidentiality": "Moderate",
+      "integrity": "High",
+      "availability": "High"
+    },
+    "web5_pqc": {
+      "did": "did:virt:city:eco-sanctuary-01",
+      "dwn_locations": [
+        "https://dwn1.smartcity.example/eco-sanctuary",
+        "https://dwn2.smartcity.example/eco-sanctuary"
+      ],
+      "kem_profile": "ML-KEM-768",
+      "sig_profile": "ML-DSA-87"
+    },
+    "human_primacy": {
+      "hitl_level": "HighImpactRequired",
+      "appeal_path_id": "eco-infra-council-sanctuary-appeals-v1"
+    },
+    "role_constraints": [
+      { "role_name": "EcoInfraCouncil", "min_signatures": 2 },
+      { "role_name": "OTOperator", "min_signatures": 1 },
+      { "role_name": "CommunityRep", "min_signatures": 1 }
+    ],
+    "species_neuroclass": {
+      "class_label": "human",
+      "subclass_label": "baseline-and-cybernetics-by-choice",
+      "neurorights_required": true
+    },
+    "biofield_load_ceiling": {
+      "max_normalized_load": 0.55,
+      "regime": "smart-city-sanctuary-v1"
+    }
+  },
+
+  "audit": {
+    "airmf_functions": ["MAP", "MEASURE", "MANAGE", "GOVERN"],
+    "sp80053_families": ["AC", "AU", "RA"],
+    "pqc_anchor_profile": "ML-DSA-87",
+    "dwn_policy_ref": "eco-sanctuary-policy-v1"
+  }
+}
